@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero-header {
+    background-image: url(../images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#box-graphic {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#box-photo {
+    background-image: url(../images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.learn-more-1:hover > div {
+    background-color: hsl(51,  100%, 49%);
+}
+
+.learn-more-2:hover > div {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.slide-in-anim {
+    animation-name: slide-in;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.slide-out-anim {
+    animation-name: slide-out;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(200%);
+    }
+}
+
+@media(max-width: 768px) {
+    #hero-header {
+        background-image: url(../images/mobile/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }   
+    
+    #box-graphic {
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    #box-photo {
+        background-image: url(../images/mobile/image-photography.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+}
