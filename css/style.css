@@ -1023,10 +1023,6 @@ video {
   --tw-bg-opacity: 0.25;
 }
 
-.hover\:fill-white:hover {
-  fill: hsl(0, 0%, 100%);
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
